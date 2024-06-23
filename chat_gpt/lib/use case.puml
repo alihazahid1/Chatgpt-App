@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:User: as User
+:Chat GPT App: as App
+:OpenAI API: as API
+
+User --> (Start)
+User --> (Use Chat GPT)
+
+(Use Chat GPT) --> (Send Message)
+(Use Chat GPT) --> (View History)
+(Use Chat GPT) --> (Navigate to New Screen)
+
+(Use Chat GPT) --> (Receive Response)
+(Receive Response) --> (Update UI)
+
+(Receive Response) --> (Handle Error)
+(Handle Error) --> (Show Error Message)
+
+(Use Chat GPT) --> (Clear Chat)
+
+(Use Chat GPT) --> (View Message History)
+(View Message History) --> (Display History Dialog)
+
+(Use Chat GPT) --> (Handle Voice Input)
+(Handle Voice Input) --> (Implement Voice Logic)
+
+(Use Chat GPT) --> (Show Snackbar)
+
+(Use Chat GPT) --> (Close History Dialog)
+
+(Use Chat GPT) --> (Extract Container Name)
+
+@enduml
